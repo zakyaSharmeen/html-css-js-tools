@@ -1,0 +1,15 @@
+Select Elements:
+
+notify: Selects the element with the class .notify.
+btn: Selects the element with the class .btn.
+Add Event Listener:
+
+Adds a click event listener to btn.
+Calls the active function when btn is clicked.
+Define active Function:
+
+Retrieves the current data-count attribute from notify, defaults to 0 if not set.
+Converts this value to a number and increments it by 1.
+Sets the updated data-count value back to notify.
+If data-count was 0 before incrementing, adds the class add-numb to notify.
+The false statement at the end has no effect and can be omitted.

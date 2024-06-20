@@ -1,0 +1,10 @@
+Document Ready: Ensures the jQuery code runs after the DOM is fully loaded.
+Show Popup: When .click is clicked, prevents default link behavior and shows .popup_box.
+Popup Visibility: Sets .popup_box to be fully visible and interactive.
+Hide on Cancel: When .btn1 is clicked, hides .popup_box and prevents default behavior.
+Hide on Delete: When .btn2 is clicked, hides .popup_box, prevents default behavior, and shows an alert.
+Set Text: Changes the text of .click element to "CLICK ME".
+HTML Structure: Includes a clickable element (.click) and a hidden popup (.popup_box).
+Popup Contents: Popup contains an icon, message, and two buttons (.btn1 for cancel and .btn2 for delete).
+Prevent Link Navigation: Uses event.preventDefault() to stop links from navigating.
+CSS Changes: Modifies opacity and pointer-events to show or hide the popup.

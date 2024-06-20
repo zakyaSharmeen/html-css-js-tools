@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+.fab {
+  color: mediumvioletred;
+  font-size: 80px;
+}
+.container .notify::before {
+  position: absolute;
+  content: attr(data-count);
+  /* content: "1"; */
+  top: 0px;
+  right: -3px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 12px;
+  background-color: black;
+  border-radius: 50px;
+  line-height: 100%;
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+.notify.add-numb::before {
+  opacity: 1;
+}
+.container .btn {
+  position: absolute;
+  left: -25px;
+  top: 100px;
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: black;
+  line-height: 40px;
+  outline: none;
+  cursor: pointer;
+}
+.container .btn:hover {
+  background-color: rgb(216, 79, 79);
+  color: black;
+}
